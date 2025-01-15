@@ -1,3 +1,4 @@
+import Athenaeum from "../components/Athenaeum";
 import Festive from "../components/Festive";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -13,6 +14,7 @@ const Home = () => {
             <SkinCareSlider />
             <Festive />
             <Products />
+            <Athenaeum />
         </div>
     );
 };
