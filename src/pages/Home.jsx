@@ -1,6 +1,7 @@
 import Festive from "../components/Festive";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Products from "../components/Products";
 import SkinCareSlider from "../components/SkinCareSlider";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero />
             <SkinCareSlider />
             <Festive />
+            <Products />
         </div>
     );
 };

@@ -5,8 +5,7 @@ const ProductSlider = ({ items, showInfo }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {
-        console.log(currentIndex);
-        if (currentIndex < items.products.length - 2) {
+        if (currentIndex < items.products.length - (showInfo ? 2 : 3)) {
             setCurrentIndex(currentIndex + 1);
         }
     };
@@ -27,18 +26,22 @@ const ProductSlider = ({ items, showInfo }) => {
                 }}
             >
                 {/* Info Section as part of sliding container */}
-                <div className="w-1/3 flex-shrink-0 px-8">
-                    <div className="max-w-lg space-y-4">
-                        <h2 className="text-sm font-semibold uppercase">{items.info.title}</h2>
-                        <h3 className="text-3xl font-bold">{items.info.subtitle}</h3>
-                        <p className="text-lg">{items.info.description}</p>
-                        {items.info.cta && (
-                            <button className="mt-4 px-6 py-3 border border-black rounded-md hover:bg-black hover:text-white">
-                                {items.info.cta.text} →
-                            </button>
-                        )}
-                    </div>
-                </div>
+                {
+                    showInfo && (
+                        <div className="w-1/3 flex-shrink-0 px-8">
+                            <div className="max-w-lg space-y-4">
+                                <h2 className="text-sm font-semibold uppercase">{items.info.title}</h2>
+                                <h3 className="text-3xl font-bold">{items.info.subtitle}</h3>
+                                <p className="text-lg">{items.info.description}</p>
+                                {items.info.cta && (
+                                    <button className="mt-4 px-6 py-3 border border-black rounded-md hover:bg-black hover:text-white">
+                                        {items.info.cta.text} →
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+                    )
+                }
 
                 {/* Product Section */}
                 {items.products.map((product, idx) => (
@@ -85,7 +88,7 @@ const ProductSlider = ({ items, showInfo }) => {
                 )}
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center">
-                {currentIndex < items.products.length - 2 && (
+                {currentIndex < items.products.length - (showInfo ? 2 : 3) && (
                     <button
                         onClick={handleNext}
                         className="p-2 bg-black text-white rounded-full shadow-lg"
