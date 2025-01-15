@@ -1,4 +1,5 @@
 import Athenaeum from "../components/Athenaeum";
+import CoolClimates from "../components/CoolClimates";
 import Festive from "../components/Festive";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -15,6 +16,7 @@ const Home = () => {
             <Festive />
             <Products />
             <Athenaeum />
+            <CoolClimates />
         </div>
     );
 };
