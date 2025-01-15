@@ -6,11 +6,11 @@ import Hero from "../components/Hero";
 import OnlineOffering from "../components/OnlineOffering";
 import Products from "../components/Products";
 import SkinCareSlider from "../components/SkinCareSlider";
+import Tokens from "../components/Tokens";
 
 const Home = () => {
     return (
         <div className="min-h-screen flex flex-col">
-            {/* Header Section */}
             <Header />
             <Hero />
             <SkinCareSlider />
@@ -19,6 +19,7 @@ const Home = () => {
             <Athenaeum />
             <CoolClimates />
             <OnlineOffering />
+            <Tokens />
         </div>
     );
 };
