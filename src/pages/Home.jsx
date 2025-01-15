@@ -3,6 +3,7 @@ import CoolClimates from "../components/CoolClimates";
 import Festive from "../components/Festive";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import OnlineOffering from "../components/OnlineOffering";
 import Products from "../components/Products";
 import SkinCareSlider from "../components/SkinCareSlider";
 
@@ -17,6 +18,7 @@ const Home = () => {
             <Products />
             <Athenaeum />
             <CoolClimates />
+            <OnlineOffering />
         </div>
     );
 };
