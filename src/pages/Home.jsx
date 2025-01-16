@@ -9,6 +9,7 @@ import OnlineOffering from "../components/OnlineOffering";
 import Products from "../components/Products";
 import QuoteSection from "../components/QuoteSection";
 import SkinCareSlider from "../components/SkinCareSlider";
+import StoreLocatorSection from "../components/StoreLocatorSection";
 import Tokens from "../components/Tokens";
 import VirtualGuidance from "../components/VirtualGuidance";
 
@@ -24,6 +25,7 @@ const Home = () => {
             <CoolClimates />
             <OnlineOffering />
             <Tokens />
+            <StoreLocatorSection />
             <VirtualGuidance />
             <QuoteSection />
             <FeatureSection />
