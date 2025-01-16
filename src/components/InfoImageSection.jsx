@@ -14,7 +14,7 @@ const InfoImageSection = ({
         >
             {/* Text Section */}
             <div className="flex-1 px-6 space-y-4">
-                <h2 className="text-sm font-semibold uppercase text-gray-600">
+                <h2 className="text-sm font-semibold text-gray-600">
                     {title}
                 </h2>
                 <h3 className="text-3xl font-bold text-gray-900">{subtitle}</h3>

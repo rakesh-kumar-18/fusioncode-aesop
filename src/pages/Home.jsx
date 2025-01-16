@@ -10,6 +10,7 @@ import Products from "../components/Products";
 import QuoteSection from "../components/QuoteSection";
 import SkinCareSlider from "../components/SkinCareSlider";
 import Tokens from "../components/Tokens";
+import VirtualGuidance from "../components/VirtualGuidance";
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
             <CoolClimates />
             <OnlineOffering />
             <Tokens />
+            <VirtualGuidance />
             <QuoteSection />
             <FeatureSection />
             <Footer />

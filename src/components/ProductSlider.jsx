@@ -25,7 +25,6 @@ const ProductSlider = ({ items, showInfo }) => {
                     transform: `translateX(-${currentIndex * (100 / 3)}%)`,
                 }}
             >
-                {/* Info Section as part of sliding container */}
                 {
                     showInfo && (
                         <div className="w-1/3 flex-shrink-0 px-8">
